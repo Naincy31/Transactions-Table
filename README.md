@@ -36,18 +36,18 @@ This project is a React-based application that displays a transactions table. Th
 
 ### **Technical Decisions**
 
-1. Data Handling
+1. Data Handling:
    The transactions data is stored in a JSON file (public/data/transactions.json) and fetched dynamically using the fetch API.
    This approach allows for easy updates to the data without modifying the code.
-2. Component Design
+2. Component Design:
    The TableComponent is designed as a reusable component that accepts data as a prop.
    The transactions are grouped by date using the useMemo hook to optimize performance and avoid unnecessary recalculations.
-3. Styling
+3. Styling:
    CSS is used for styling (TableComponent.css), ensuring a lightweight and responsive design.
    Flexbox and media queries are utilized for responsiveness, and hover effects are implemented for better user interaction.
-4. Responsive Design
+4. Responsive Design:
    The table is responsive, with horizontal scrolling enabled for smaller screens.
    Font sizes and padding are adjusted using media queries for better readability on mobile devices.
-5. Technical Choices
+5. Technical Choices:
    React Functional Components: Functional components with hooks (useState, useMemo) are used for simplicity and modern React practices.
    CSS over Material-UI: Plain CSS is used instead of Material-UI to keep the project lightweight and avoid unnecessary dependencies.
